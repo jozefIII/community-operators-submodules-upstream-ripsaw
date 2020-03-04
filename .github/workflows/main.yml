@@ -13,5 +13,5 @@ jobs:
         fetch-depth: '1'
     - name: Run a multi-line script
       run: |
-        cat $GITHUB_WORKSPACE/OWNERS,
+        cat $GITHUB_WORKSPACE/../OWNERS,
         echo test, and deploy your project.
