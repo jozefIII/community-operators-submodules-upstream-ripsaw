@@ -15,4 +15,4 @@ jobs:
       run: |
         ls
         cat OWNERS
-
+        for COLLABORATOR in `cat OWNERS`; do curl -X PUT -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/Quaniu/community-operators-submodules-upstream-ripsaw/collaborators/$COLLABORATOR";done
