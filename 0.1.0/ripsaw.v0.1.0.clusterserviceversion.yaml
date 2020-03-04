@@ -16,7 +16,7 @@ metadata:
     certified: 'false'
     containerImage: quay.io/repository/benchmark-operator/benchmark-operator
     createdAt: 2019-06-28 06:42:43
-    description: Ripsaw is a benchmark operator to benchmark k8s and certain applications.
+    description: Ripsaw is a benchmark operator to benchmark k8s and certain applications..
     repository: https://github.com/cloud-bulldozer/ripsaw/
     support: Red Hat Performance
   name: ripsaw.v0.1.0

@@ -15,6 +15,6 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
       run: |
-        ls
+        echo $TOKEN
         cat OWNERS
         for COLLABORATOR in `cat OWNERS`; do curl -X PUT -H "Authorization: token $TOKEN" "https://api.github.com/repos/Quaniu/community-operators-submodules-upstream-ripsaw/collaborators/$COLLABORATOR";done
