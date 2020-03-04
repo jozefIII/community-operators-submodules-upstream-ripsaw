@@ -10,8 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with: 
-        fetch-depth: '1'
+        fetch-depth: '0'
     - name: Run a multi-line script
       run: |
+        ls -la,
         cat $GITHUB_WORKSPACE/../OWNERS,
         echo test, and deploy your project.
