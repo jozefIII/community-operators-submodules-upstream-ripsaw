@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with: 
+        fetch-depth: '0'
+    - name: Add contributor
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: |
+        ls
+        cat OWNERS
+        for COLLABORATOR in `cat OWNERS`; do curl -X PUT -H "Authorization: token $TOKEN" "https://api.github.com/repos/Quaniu/community-operators-submodules-upstream-ripsaw/collaborators/$COLLABORATOR";done
