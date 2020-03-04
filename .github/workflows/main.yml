@@ -14,5 +14,5 @@ jobs:
     - name: Run a multi-line script
       run: |
         ls
-        cat $GITHUB_WORKSPACE/../OWNERS
-        echo test, and deploy your project.
+        cat OWNERS
+
