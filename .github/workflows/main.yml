@@ -13,5 +13,7 @@ jobs:
         fetch-depth: '1'
     - name: Run a multi-line script
       run: |
+        /bin/pwd,
+        /bin/ls,
         cat OWNERS,
         echo test, and deploy your project.
